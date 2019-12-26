@@ -1,0 +1,27 @@
+Number of medecine with substance starting with letter 'A' : 198
+Number of medecine with substance starting with letter 'B' : 81
+Number of medecine with substance starting with letter 'C' : 175
+Number of medecine with substance starting with letter 'D' : 112
+Number of medecine with substance starting with letter 'E' : 87
+Number of medecine with substance starting with letter 'F' : 80
+Number of medecine with substance starting with letter 'G' : 50
+Number of medecine with substance starting with letter 'H' : 31
+Number of medecine with substance starting with letter 'I' : 77
+Number of medecine with substance starting with letter 'J' : 1
+Number of medecine with substance starting with letter 'K' : 6
+Number of medecine with substance starting with letter 'L' : 71
+Number of medecine with substance starting with letter 'M' : 120
+Number of medecine with substance starting with letter 'N' : 65
+Number of medecine with substance starting with letter 'O' : 46
+Number of medecine with substance starting with letter 'P' : 151
+Number of medecine with substance starting with letter 'Q' : 8
+Number of medecine with substance starting with letter 'R' : 57
+Number of medecine with substance starting with letter 'S' : 97
+Number of medecine with substance starting with letter 'T' : 132
+Number of medecine with substance starting with letter 'U' : 11
+Number of medecine with substance starting with letter 'V' : 43
+Number of medecine with substance starting with letter 'W' : 1
+Number of medecine with substance starting with letter 'X' : 4
+Number of medecine with substance starting with letter 'Y' : 1
+Number of medecine with substance starting with letter 'Z' : 17
+Total number of medecine with substance preserved = 1722
