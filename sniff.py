@@ -27,7 +27,7 @@ for i in range(first, last + 1):
 
     for j in medecine:
         subst.write(j + ",.N+susbt\n")
-    subst.write("\n")
+    # subst.write("\n")
 
     info.write("Number of medecine with substance starting with letter '"+chr(i)+"' : "+str(len(medecine)) + "\n")
     cpt += len(medecine)
