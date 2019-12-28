@@ -26,6 +26,8 @@ for i in range(first, last + 1):
     medecine = re.findall(r'[0-9]+\.htm">(.+)<', website)
 
     for j in medecine:
+        if j.startswith('é'):
+            j = 'e' + j[1:]
         subst.write(j + ",.N+susbt\n")
     # subst.write("\n")
 

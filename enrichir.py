@@ -1,7 +1,7 @@
 import sys, re
 
 corpus_medical = open(sys.argv[1], 'r', encoding="utf-8").readlines()
-subst = open('./results/subst.dic', 'r', encoding="utf-16-le").readlines()
+subst = open('./results/subst.dic', 'r', encoding="utf-16").readlines()
 enrich = open("./results/subts_enrichi.dic", 'w', encoding="utf-16-le")
 
 enrich.write('\ufeff')
@@ -13,13 +13,15 @@ for i in corpus_medical:
         medecine = str(token.group(1)).lower()
         # some special cases that should not be included
         if not medecine.startswith("ø") and medecine != "témesta" and medecine != "intraveineuse" and medecine != "kardégic":
+            if medecine.startswith('é'):
+                medecine = 'e' + medecine[1:]
             subst.append(medecine + ",.N+subst\n")
             enrich_list.append(str(token.group(1)).upper())
 # Writing the subts_enrichi.dic File
 count = 1
 for i in enrich_list:
     enrich.write(i + "\n")
-    print(str(count) + " - " + i)
+    # print(str(count) + " - " + i)
     count += 1
 enrich.close()
 
@@ -44,6 +46,6 @@ infos2.close()
 temp = open("./results/subst.dic","w",encoding="utf-16")
 
 subst = list(dict.fromkeys(sorted(subst)))
-for i in subst:
+for i in sorted(subst):
     temp.write(i)
 temp.close()
