@@ -1,7 +1,7 @@
 import sys, re
 
 corpus_medical = open(sys.argv[1], 'r', encoding="utf-8").readlines()
-subst = open('./results/subst.dic', 'r', encoding="utf-16").readlines()
+subst = open('./results/subst.dic', 'r', encoding="utf-16-le").readlines()
 enrich = open("./results/subts_enrichi.dic", 'w', encoding="utf-16-le")
 
 enrich.write('\ufeff')
@@ -13,14 +13,12 @@ for i in corpus_medical:
         medecine = str(token.group(1)).lower()
         # some special cases that should not be included
         if not medecine.startswith("ø") and medecine != "témesta" and medecine != "intraveineuse" and medecine != "kardégic":
-            if medecine.startswith('é'):
-                medecine = 'e' + medecine[1:]
             subst.append(medecine + ",.N+subst\n")
-            enrich_list.append(str(token.group(1)).upper())
+            enrich_list.append(str(token.group(1)))
 # Writing the subts_enrichi.dic File
 count = 1
 for i in enrich_list:
-    enrich.write(i + "\n")
+    enrich.write(i.lower() + "\n")
     # print(str(count) + " - " + i)
     count += 1
 enrich.close()
@@ -43,9 +41,23 @@ infos2.write("\nTotal number of enriched medecines : " + str(len(enrich_list)))
 infos2.close()
 
 # Updating the subst.dic with all new changes
-temp = open("./results/subst.dic","w",encoding="utf-16")
+temp = open("./results/subst.dic","w",encoding="utf-16-le")
+temp.write('\ufeff')
 
 subst = list(dict.fromkeys(sorted(subst)))
-for i in sorted(subst):
-    temp.write(i)
+
+temp.write(subst[-1])
+
+for i in subst:
+    if i[0] <= 'e':
+        temp.write(i)
+
+for i in subst:
+    if i[0] == 'é':
+        temp.write(i)
+
+for i in subst:
+    if i[0] > 'e' and i[0] <= 'z':
+        temp.write(i)
+
 temp.close()

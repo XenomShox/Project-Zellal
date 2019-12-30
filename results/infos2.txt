@@ -1,22 +1,26 @@
-Number of medecines starting with letter 'A' : 16
+Number of medecines starting with letter 'A' : 17
 Number of medecines starting with letter 'B' : 4
-Number of medecines starting with letter 'C' : 15
-Number of medecines starting with letter 'D' : 9
+Number of medecines starting with letter 'C' : 18
+Number of medecines starting with letter 'D' : 10
 Number of medecines starting with letter 'E' : 7
-Number of medecines starting with letter 'F' : 6
-Number of medecines starting with letter 'G' : 6
+Number of medecines starting with letter 'F' : 7
+Number of medecines starting with letter 'G' : 7
 Number of medecines starting with letter 'H' : 3
-Number of medecines starting with letter 'I' : 7
-Number of medecines starting with letter 'K' : 2
-Number of medecines starting with letter 'L' : 7
-Number of medecines starting with letter 'M' : 8
+Number of medecines starting with letter 'I' : 8
+Number of medecines starting with letter 'K' : 3
+Number of medecines starting with letter 'L' : 10
+Number of medecines starting with letter 'M' : 10
 Number of medecines starting with letter 'N' : 1
 Number of medecines starting with letter 'O' : 3
-Number of medecines starting with letter 'P' : 8
+Number of medecines starting with letter 'P' : 6
 Number of medecines starting with letter 'R' : 4
-Number of medecines starting with letter 'S' : 10
-Number of medecines starting with letter 'T' : 11
+Number of medecines starting with letter 'S' : 11
+Number of medecines starting with letter 'T' : 12
 Number of medecines starting with letter 'V' : 2
 Number of medecines starting with letter 'Z' : 6
+Number of medecines starting with letter 'a' : 1
+Number of medecines starting with letter 'k' : 1
+Number of medecines starting with letter 'l' : 1
+Number of medecines starting with letter 'p' : 2
 
-Total number of enriched medecines : 135
+Total number of enriched medecines : 154
