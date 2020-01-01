@@ -18,9 +18,21 @@ Number of medecines starting with letter 'S' : 11
 Number of medecines starting with letter 'T' : 12
 Number of medecines starting with letter 'V' : 2
 Number of medecines starting with letter 'Z' : 6
-Number of medecines starting with letter 'a' : 1
-Number of medecines starting with letter 'k' : 1
-Number of medecines starting with letter 'l' : 1
-Number of medecines starting with letter 'p' : 2
+Number of medecines starting with letter 'a' : 6
+Number of medecines starting with letter 'c' : 4
+Number of medecines starting with letter 'd' : 2
+Number of medecines starting with letter 'e' : 3
+Number of medecines starting with letter 'f' : 1
+Number of medecines starting with letter 'i' : 4
+Number of medecines starting with letter 'k' : 3
+Number of medecines starting with letter 'l' : 7
+Number of medecines starting with letter 'o' : 1
+Number of medecines starting with letter 'p' : 5
+Number of medecines starting with letter 'r' : 1
+Number of medecines starting with letter 's' : 2
+Number of medecines starting with letter 't' : 2
+Number of medecines starting with letter 'v' : 1
+Number of medecines starting with letter 'x' : 1
+Number of medecines starting with letter 'z' : 1
 
-Total number of enriched medecines : 154
+Total number of enriched medecines : 193

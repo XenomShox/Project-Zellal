@@ -15,14 +15,14 @@ for i in corpus_medical:
         if not medecine.startswith("ø") and medecine != "témesta" and medecine != "intraveineuse" and medecine != "kardégic":
             subst.append(medecine + ",.N+subst\n")
             enrich_list.append(str(token.group(1)))
-    
-    # another_token = re.search(r"(\w+) .*: \d+|½ (goutte|sachet|par|le)*?.*", i , re.I)
-    # if another_token:
-    #     medecine = str(another_token.group(1)).lower()
-    #     # some special cases that should not be included
-    #     if not medecine.startswith("ø") and medecine != "témesta" and medecine != "intraveineuse" and medecine != "kardégic":
-    #         subst.append(medecine + ",.N+subst\n")
-    #         enrich_list.append(medecine)
+
+    another_token = re.search(r"^(\w+\s*\d+|\w+\s\w+\s*\d+)\s:\s(½\s|\d+\s)(goutte|sachet|par|le|\s|jour|j|jour|nuit|matin|midi|soir|coucher|agitation|douleur|h|ge)+", i , re.I)
+    if another_token:
+        medecine = str(another_token.group(1)).lower()
+        # some special cases that should not be included
+        if not medecine.startswith("ø") and medecine != "témesta" and medecine != "intraveineuse" and medecine != "kardégic":
+            subst.append(medecine + ",.N+subst\n")
+            enrich_list.append(medecine)
 # Writing the subts_enrichi.dic File
 count = 1
 for i in enrich_list:
